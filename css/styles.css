@@ -30,7 +30,6 @@ h4,
 h5,
 h6,
 ul,
-li,
 p {
   padding: 0;
   margin: 0;
@@ -44,8 +43,18 @@ p {
   margin-right: auto;
   outline: 1px solid tomato;
 }
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
 /* header */
+
+.header {
+  background: #ffffff;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+}
 
 .logo {
   font-family: 'Raleway', sans-serif;
@@ -146,9 +155,6 @@ p {
   background-color: var(--accent-active-color);
 }
 /* feature */
-.feature {
-  padding: 94px;
-}
 
 .feature .feature-title {
   font-weight: 700;
@@ -175,7 +181,6 @@ p {
   color: var(--title-text-color);
 }
 .activity-list {
-  padding-bottom: 94px;
   outline: 1px solid tomato;
 }
 
@@ -186,7 +191,6 @@ p {
 }
 
 .team-title {
-  padding-top: 94px;
   padding-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
@@ -196,7 +200,6 @@ p {
   color: var(--title-text-color);
 }
 .team-list {
-  padding-bottom: 94px;
   outline: 1px solid tomato;
 }
 .team-items {
