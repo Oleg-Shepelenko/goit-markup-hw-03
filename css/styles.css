@@ -36,12 +36,11 @@ p {
 }
 
 .container {
-  width: 1200px;
+  width: 1230px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  outline: 1px solid tomato;
 }
 .section {
   padding-top: 94px;
@@ -52,8 +51,13 @@ p {
 
 .header {
   background: #ffffff;
-  border: 1px solid #000000;
+  border: 1px solid #ececec;
   box-sizing: border-box;
+}
+.site {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 
 .logo {
@@ -80,12 +84,19 @@ p {
 }
 
 /* site-nav */
+.site-nav {
+  display: flex;
+  margin-left: 93px;
+}
+.site-nav .item + .item {
+  margin-left: 50px;
+}
 
 .site-nav .link {
+  color: var(--title-text-color);
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--title-text-color);
   text-decoration: none;
 }
 
@@ -98,7 +109,14 @@ p {
 .site-nav .link.current {
   color: var(--accent-color);
 }
+.contacts-header {
+  display: flex;
+  justify-content: flex-end;
+}
 
+.contacts-header .item + .item {
+  margin-left: 50px;
+}
 .contacts-header .link {
   font-weight: 500;
   line-height: 1.14;
@@ -116,7 +134,6 @@ p {
 .hero {
   text-align: center;
   background-color: var(--first-bg-color);
-  outline: 1px solid tomato;
 }
 .hero-title {
   padding-top: 200px;
@@ -155,8 +172,21 @@ p {
   background-color: var(--accent-active-color);
 }
 /* feature */
+.feature-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 
+.feature-items {
+  width: 270px;
+  margin-right: 30px;
+}
+.feature-items:nth-child(4n) {
+  margin-right: 0px;
+}
 .feature .feature-title {
+  padding-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -164,6 +194,7 @@ p {
   text-transform: uppercase;
   color: var(--title-text-color);
 }
+
 .feature .feature-text {
   font-weight: 400;
   line-height: 1.71;
@@ -181,9 +212,13 @@ p {
   color: var(--title-text-color);
 }
 .activity-list {
-  outline: 1px solid tomato;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
-
+.activity-list .activity-items + .activity-items {
+  margin-left: 30px;
+}
 /* team */
 
 .team {
@@ -200,12 +235,20 @@ p {
   color: var(--title-text-color);
 }
 .team-list {
-  outline: 1px solid tomato;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
+
 .team-items {
-  outline: 1px solid tomato;
+  margin-right: 30px;
+  background: #ffffff;
+}
+.team-items:nth-child(4n) {
+  margin-right: 0px;
 }
 .team-subject {
+  padding-top: 30px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
@@ -214,6 +257,8 @@ p {
   color: var(--title-text-color);
 }
 .team-text {
+  padding-top: 10px;
+  padding-bottom: 30px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
@@ -255,16 +300,27 @@ p {
 }
 
 /* gallery */
+.gallery-navigation {
+  display: flex;
+  justify-content: center;
+}
 
 .gallery-button {
+  margin-left: 8px;
+  display: inline-block;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: 6px 22px;
+  min-width: 73px;
+  color: var(--title-text-color);
+  background-color: var(--second-bg-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
-  color: var(--title-text-color);
-  background-color: var(--second-bg-color);
 }
+
 .gallery-button:focus,
 .gallery-button:hover {
   background-color: var(--accent-color);
@@ -273,6 +329,23 @@ p {
 .gallery-button.here {
   background-color: var(--accent-color);
   color: var(--hidden-text-color);
+}
+.portfoli-list {
+  padding-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.portfoli-items {
+  width: 380px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+.portfoli-items:nth-child(3n) {
+  margin-right: 0;
+}
+.portfoli-items:nth-last-child(-n + 3) {
+  margin-bottom: 0;
 }
 
 .portfoli-title {
@@ -284,6 +357,7 @@ p {
 }
 
 .portfoli-text {
+  padding-top: 4px;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.86;
@@ -292,4 +366,7 @@ p {
 }
 .portfoli-link {
   text-decoration: none;
+}
+.portfoli-conteiner {
+  padding: 20px 24px;
 }

@@ -20,37 +20,39 @@
   <body>
     <!-- Шапка проекта -->
     <header class="header">
-      <div class="container">
-        <nav>
-          <a class="logo" href=""><span class="logo-primary">Web</span>Studio</a>
-          <ul class="site-nav list">
-            <li>
-              <a href="./index.html" class="link">Студия</a>
+      <div class="container site">
+        <div class="container">
+          <nav class="site">
+            <a class="logo" href=""><span class="logo-primary">Web</span>Studio</a>
+            <ul class="site-nav list">
+              <li class="item">
+                <a class="link " href="./index.html">Студия</a>
+              </li>
+              <li class="item">
+                <a class="link current" href="./portfolio.html">Портфолио</a>
+              </li>
+              <li class="item">
+                <a class="link" href="">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="container">
+          <ul class="contacts-header list">
+            <li class="item">
+              <a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a>
             </li>
-            <li>
-              <a href="./portfolio.html" class="link current">Портфолио</a>
-            </li>
-            <li>
-              <a href="" class="link">Контакты</a>
+            <li class="item">
+              <a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
             </li>
           </ul>
-        </nav>
-      </div>
-      <div class="container">
-        <ul class="contacts-header list">
-          <li>
-            <a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-          </li>
-          <li>
-            <a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
-          </li>
-        </ul>
+        </div>
       </div>
     </header>
     <!-- Тело проекта -->
     <main class="gallery">
       <!--Навигация -->
-      <section class="portfoli">
+      <section class="portfoli section">
         <div class="container">
           <ul class="gallery-navigation list">
             <li><button class="gallery-button here" type="button">Все</button></li>
@@ -71,8 +73,10 @@
                   height="294"
                   alt="Технокряк"
                 />
-                <h2 class="portfoli-title">Технокряк</h2>
-                <p class="portfoli-text">Веб-сайт</p>
+                <div class="portfoli-conteiner">
+                  <h2 class="portfoli-title">Технокряк</h2>
+                  <p class="portfoli-text">Веб-сайт</p>
+                </div>
               </a>
             </li>
             <li class="portfoli-items">
@@ -84,8 +88,10 @@
                   height="294"
                   alt="Постер New Orlean vs Golden Star"
                 />
-                <h2 class="portfoli-title">Постер New Orlean vs Golden Star</h2>
-                <p class="portfoli-text">Дизайн</p>
+                <div class="portfoli-conteiner">
+                  <h2 class="portfoli-title">Постер New Orlean vs Golden Star</h2>
+                  <p class="portfoli-text">Дизайн</p>
+                </div>
               </a>
             </li>
             <li class="portfoli-items">
@@ -97,8 +103,10 @@
                   height="294"
                   alt="Ресторан Seafood"
                 />
-                <h2 class="portfoli-title">Ресторан Seafood</h2>
-                <p class="portfoli-text">Приложение</p>
+                <div class="portfoli-conteiner">
+                  <h2 class="portfoli-title">Ресторан Seafood</h2>
+                  <p class="portfoli-text">Приложение</p>
+                </div>
               </a>
             </li>
             <li class="portfoli-items">
@@ -110,8 +118,10 @@
                   height="294"
                   alt="Проект Prime"
                 />
-                <h2 class="portfoli-title">Проект Prime</h2>
-                <p class="portfoli-text">Маркетинг</p>
+                <div class="portfoli-conteiner">
+                  <h2 class="portfoli-title">Проект Prime</h2>
+                  <p class="portfoli-text">Маркетинг</p>
+                </div>
               </a>
             </li>
             <li class="portfoli-items">
@@ -122,9 +132,9 @@
                   width="370"
                   height="294"
                   alt="Проект Boxes"
-                />
+                /><div class="portfoli-conteiner">
                 <h2 class="portfoli-title">Проект Boxes</h2>
-                <p class="portfoli-text">Приложение</p>
+                <p class="portfoli-text">Приложение</p></div>
               </a>
             </li>
             <li class="portfoli-items">
@@ -135,9 +145,9 @@
                   width="370"
                   height="294"
                   alt="Inspiration has no Borders"
-                />
+                /><div class="portfoli-conteiner">
                 <h2 class="portfoli-title">Inspiration has no Borders</h2>
-                <p class="portfoli-text">Веб-сайт</p>
+                <p class="portfoli-text">Веб-сайт</p></div>
               </a>
             </li>
             <li class="portfoli-items">
@@ -148,9 +158,9 @@
                   width="370"
                   height="294"
                   alt="Издание Limited Edition"
-                />
+                /><div class="portfoli-conteiner">
                 <h2 class="portfoli-title">Издание Limited Edition</h2>
-                <p class="portfoli-text">Дизайн</p>
+                <p class="portfoli-text">Дизайн</p></div>
               </a>
             </li>
             <li class="portfoli-items">
@@ -161,10 +171,10 @@
                   width="370"
                   height="294"
                   alt="Проект LAB"
-                />
+                /><div class="portfoli-conteiner">
                 <h2 class="portfoli-title">Проект LAB</h2>
                 <p class="portfoli-text">Маркетинг</p>
-              </a>
+              </a></div>
             </li>
             <li class="portfoli-items">
               <a class="portfoli-link" href="">
@@ -174,9 +184,9 @@
                   width="370"
                   height="294"
                   alt="Growing Business"
-                />
+                /><div class="portfoli-conteiner">
                 <h2 class="portfoli-title">Growing Business</h2>
-                <p class="portfoli-text">Приложение</p>
+                <p class="portfoli-text">Приложение</p></div>
               </a>
             </li>
           </ul>
