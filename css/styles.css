@@ -19,6 +19,32 @@ body {
   font-size: 14px;
   color: var(--primary-text-color);
 }
+
+.list {
+  list-style: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+li,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  outline: 1px solid tomato;
+}
+
 /* header */
 
 .logo {
@@ -42,10 +68,6 @@ body {
   letter-spacing: 0.03em;
   color: var(--hidden-text-color);
   text-decoration: none;
-}
-
-.list {
-  list-style: none;
 }
 
 /* site-nav */
@@ -81,58 +103,52 @@ body {
   color: var(--accent-color);
 }
 
+/* hero */
+.hero {
+  text-align: center;
+  background-color: var(--first-bg-color);
+  outline: 1px solid tomato;
+}
+.hero-title {
+  padding-top: 200px;
+  margin-bottom: 30px;
+  color: var(--hidden-text-color);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
 /* button */
 .hero-button {
+  margin-bottom: 200px;
+  display: inline-block;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 200px;
+
+  color: var(--hidden-text-color);
+  background-color: var(--accent-color);
+
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
-  display: flex;
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  margin: auto;
-  color: var(--hidden-text-color);
-  background-color: var(--accent-color);
 }
 
 .hero-button:hover,
 .hero-button:focus {
   background-color: var(--accent-active-color);
 }
-
-.gallery-button {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--title-text-color);
-  background-color: var(--second-bg-color);
-}
-.gallery-button:focus,
-.gallery-button:hover {
-  background-color: var(--accent-color);
-  color: var(--hidden-text-color);
-}
-.gallery-button.here {
-  background-color: var(--accent-color);
-  color: var(--hidden-text-color);
-}
-/* hero */
-.hero {
-  background-color: var(--first-bg-color);
-}
-.hero-title {
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: var(--hidden-text-color);
-}
-
 /* feature */
+.feature {
+  padding: 94px;
+}
 
 .feature .feature-title {
   font-weight: 700;
@@ -150,12 +166,17 @@ body {
 /* activity */
 
 .activity-title {
+  padding-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
+}
+.activity-list {
+  padding-bottom: 94px;
+  outline: 1px solid tomato;
 }
 
 /* team */
@@ -165,12 +186,21 @@ body {
 }
 
 .team-title {
+  padding-top: 94px;
+  padding-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
+}
+.team-list {
+  padding-bottom: 94px;
+  outline: 1px solid tomato;
+}
+.team-items {
+  outline: 1px solid tomato;
 }
 .team-subject {
   font-weight: 500;
@@ -190,6 +220,14 @@ body {
 /* footer */
 .footer {
   background-color: var(--first-bg-color);
+}
+.footer .logo-secondary {
+  display: inline-block;
+  padding-top: 60px;
+}
+.contacts-footer {
+  padding-top: 20px;
+  padding-bottom: 60px;
 }
 .contacts-footer .address-footer {
   font-weight: 400;
@@ -214,6 +252,25 @@ body {
 }
 
 /* gallery */
+
+.gallery-button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
+  background-color: var(--second-bg-color);
+}
+.gallery-button:focus,
+.gallery-button:hover {
+  background-color: var(--accent-color);
+  color: var(--hidden-text-color);
+}
+.gallery-button.here {
+  background-color: var(--accent-color);
+  color: var(--hidden-text-color);
+}
 
 .portfoli-title {
   font-weight: 700;
