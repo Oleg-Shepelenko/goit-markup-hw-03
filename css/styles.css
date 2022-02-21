@@ -15,12 +15,6 @@ font-family: 'Roboto', sans-serif; */
   --second-bg-color: #f5f4fa;
 }
 
-body {
-  font-family: 'Roboto', sans-serif;
-  font-size: 14px;
-  color: var(--primary-text-color);
-}
-
 img {
   display: block;
 }
@@ -39,6 +33,11 @@ p {
   margin: 0;
 }
 
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  color: var(--primary-text-color);
+}
 .container {
   width: 1200px;
   padding-left: 15px;
