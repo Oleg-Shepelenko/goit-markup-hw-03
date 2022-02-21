@@ -21,6 +21,9 @@ body {
   color: var(--primary-text-color);
 }
 
+img {
+  display: block;
+}
 .list {
   list-style: none;
 }
@@ -119,8 +122,6 @@ p {
 }
 .contacts-header {
   display: flex;
-  padding-top: 32px;
-  padding-bottom: 32px;
   margin-left: auto;
 }
 
@@ -212,6 +213,10 @@ p {
 }
 /* activity */
 
+.activity {
+  padding-bottom: 94px;
+}
+
 .activity-title {
   margin-bottom: 50px;
   font-weight: 700;
@@ -229,9 +234,7 @@ p {
 .activity-list .activity-items + .activity-items {
   margin-left: 30px;
 }
-img {
-  display: block;
-}
+
 /* team */
 
 .team {
