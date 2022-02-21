@@ -149,6 +149,9 @@ p {
   background-color: var(--first-bg-color);
 }
 .hero-title {
+  width: 696px;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 30px;
   color: var(--hidden-text-color);
   font-weight: 900;
